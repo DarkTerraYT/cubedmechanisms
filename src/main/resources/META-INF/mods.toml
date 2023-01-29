@@ -1,0 +1,57 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+
+issueTrackerURL="https://github.com/DarkTerraYT/simplemeckanisms/issues" #optional
+
+[[mods]] #mandatory
+
+modId="simplemeckanisms" #mandatory
+
+version="${0.0.1-1.19.2}" #mandatory
+
+displayName="Simple Meckanisms" #mandatory
+logoFile="examplemod.png" #optional
+# A text field displayed in the mod UI
+authors="CubedLeaves" #optional
+
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Simple Machines is a slightly simpler mod than the other tech mods, like Mekanism and Thermal Foundation.
+Simple Machines is not a replacement to the other tech mods, use other tech mods with it!
+
+The Machinery, Automation, Power, and Pipes will be sure to help you create a factory to get all the stuff you need in your adventures (except food).
+
+Can I use it in a modpack?
+
+Yes you can use it a modpack as long the modpack isn't a paid modpack.
+
+DO NOT REDISTRIBUTE THIS MOD (unless you have credits, and a link to this page).
+
+Issues:
+
+Wiki:
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.simplemeckanisms]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[43,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.simplemeckanisms]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"

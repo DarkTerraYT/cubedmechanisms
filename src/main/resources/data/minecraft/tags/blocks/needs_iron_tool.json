@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "simplemeckanisms:energonic_ore",
+    "simplemeckanisms:energonic_block",
+    "simplemeckanisms:deepslate_energonic_ore",
+    "simplemeckanisms:heated_ore",
+    "simplemeckanisms:super_heated_block",
+    "simplemeckanisms:deepslate_heated_ore"
+  ]
+}

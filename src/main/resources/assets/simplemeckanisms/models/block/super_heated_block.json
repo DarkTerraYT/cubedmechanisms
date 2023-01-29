@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "simplemeckanisms:block/super_heated_block"
+  }
+}

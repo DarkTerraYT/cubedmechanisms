@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "simplemeckanisms:cryogenic_ore",
+    "simplemeckanisms:cryogenic_block",
+    "simplemeckanisms:deepslate_cryogenic_ore",
+    "simplemeckanisms:iridium_ore",
+    "simplemeckanisms:iridium_block",
+    "simplemeckanisms:deepslate_iridium_ore"
+  ]
+}

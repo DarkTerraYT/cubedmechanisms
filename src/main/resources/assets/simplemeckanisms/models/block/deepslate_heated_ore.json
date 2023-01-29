@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "simplemeckanisms:block/deepslate_heated_ore"
+  }
+}

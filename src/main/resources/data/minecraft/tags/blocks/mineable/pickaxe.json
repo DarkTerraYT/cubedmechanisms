@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "simplemeckanisms:electro_ore",
+    "simplemeckanisms:electro_block",
+    "simplemeckanisms:deepslate_electro_ore",
+    "simplemeckanisms:cryogenic_ore",
+    "simplemeckanisms:cryogenic_block",
+    "simplemeckanisms:deepslate_cryogenic_ore",
+    "simplemeckanisms:iridium_ore",
+    "simplemeckanisms:iridium_block",
+    "simplemeckanisms:deepslate_iridium_ore",
+    "simplemeckanisms:heated_ore",
+    "simplemeckanisms:super_heated_block",
+    "simplemeckanisms:deepslate_heated_ore",
+    "simplemeckanisms:energonic_ore",
+    "simplemeckanisms:energonic_block",
+    "simplemeckanisms:deepslate_energonic_ore",
+    "simplemeckanisms:infused_electro_block",
+    "simplemeckanisms:experience_ore",
+    "simplemeckanisms:deepslate_experience_ore"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "simplemeckanisms:infused_electro_crystal"
+    }
+  },
+  "result": {
+    "item": "simplemeckanisms:infused_electro_block"
+  }
+}
