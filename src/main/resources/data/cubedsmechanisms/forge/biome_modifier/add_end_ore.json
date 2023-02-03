@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "cubedsmechanisms:end_electro_ore_placed",
+    "cubedsmechanisms:end_energonic_ore_placed",
+    "cubedsmechanisms:end_cryogenic_ore_placed",
+    "cubedsmechanisms:end_iridium_ore_placed",
+    "cubedsmechanisms:end_heated_ore_placed",
+    "cubedsmechanisms:end_experience_ore_placed"
+  ],
+  "step": "underground_ores"
+}

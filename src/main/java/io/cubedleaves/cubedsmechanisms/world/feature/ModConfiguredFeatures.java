@@ -76,9 +76,9 @@ public class ModConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?,?>> HEATED_ORE = CONFIGURED_FEATURE.register("heated_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_HEATED_ORES.get(),5)));
     public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_HEATED_ORE = CONFIGURED_FEATURE.register("nether_heated_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_HEATED_ORES.get(),7)));
     public static final RegistryObject<ConfiguredFeature<?,?>> END_HEATED_ORE = CONFIGURED_FEATURE.register("end_heated_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_HEATED_ORES.get(),7)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> EXPERIENCE_ORE = CONFIGURED_FEATURE.register("experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_EXPERIENCE_ORES.get(),2)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_EXPERIENCE_ORE = CONFIGURED_FEATURE.register("nether_experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_EXPERIENCE_ORES.get(),4)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> END_EXPERIENCE_ORE = CONFIGURED_FEATURE.register("end_experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_EXPERIENCE_ORES.get(),4)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> EXPERIENCE_ORE = CONFIGURED_FEATURE.register("experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_EXPERIENCE_ORES.get(),4)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_EXPERIENCE_ORE = CONFIGURED_FEATURE.register("nether_experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_EXPERIENCE_ORES.get(),6)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> END_EXPERIENCE_ORE = CONFIGURED_FEATURE.register("end_experience_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_EXPERIENCE_ORES.get(),6)));
 
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURE.register(eventBus);

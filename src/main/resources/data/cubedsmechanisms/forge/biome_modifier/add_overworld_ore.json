@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "cubedsmechanisms:electro_ore_placed",
+    "cubedsmechanisms:energonic_ore_placed",
+    "cubedsmechanisms:cryogenic_ore_placed",
+    "cubedsmechanisms:iridium_ore_placed",
+    "cubedsmechanisms:heated_ore_placed",
+    "cubedsmechanisms:experience_ore_placed"
+  ],
+  "step": "underground_ores"
+}

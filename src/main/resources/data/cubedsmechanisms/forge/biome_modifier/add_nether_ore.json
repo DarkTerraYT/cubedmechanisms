@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "cubedsmechanisms:nether_electro_ore_placed",
+    "cubedsmechanisms:nether_energonic_ore_placed",
+    "cubedsmechanisms:nether_cryogenic_ore_placed",
+    "cubedsmechanisms:nether_iridium_ore_placed",
+    "cubedsmechanisms:nether_heated_ore_placed",
+    "cubedsmechanisms:nether_experience_ore_placed"
+  ],
+  "step": "underground_ores"
+}

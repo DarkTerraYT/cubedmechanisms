@@ -2,6 +2,7 @@ package io.cubedleaves.cubedsmechanisms;
 
 import com.mojang.logging.LogUtils;
 import io.cubedleaves.cubedsmechanisms.world.feature.ModConfiguredFeatures;
+import io.cubedleaves.cubedsmechanisms.world.feature.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +31,7 @@ public class CubedsMechanisms
         blockinit.register(modEventBus);
 
         ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
