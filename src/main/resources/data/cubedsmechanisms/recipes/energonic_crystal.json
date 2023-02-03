@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cubedsmechanisms:energonic_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "cubedsmechanisms:energonic_crystal"
+  }
+}

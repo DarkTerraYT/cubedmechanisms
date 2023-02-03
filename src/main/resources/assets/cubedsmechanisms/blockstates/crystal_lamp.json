@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": {"model":  "cubedsmechanisms:block/crystal_lamp_on"},
+    "lit=false": {"model":  "cubedsmechanisms:block/crystal_lamp_off"}
+  }
+}

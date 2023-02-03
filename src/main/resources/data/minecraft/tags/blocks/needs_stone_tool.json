@@ -1,11 +1,13 @@
 {
   "replace": false,
   "values": [
-    "simplemeckanisms:cryogenic_ore",
-    "simplemeckanisms:cryogenic_block",
-    "simplemeckanisms:deepslate_cryogenic_ore",
-    "simplemeckanisms:iridium_ore",
-    "simplemeckanisms:iridium_block",
-    "simplemeckanisms:deepslate_iridium_ore"
+    "cubedsmechanisms:cryogenic_ore",
+    "cubedsmechanisms:cryogenic_block",
+    "cubedsmechanisms:deepslate_cryogenic_ore",
+    "cubedsmechanisms:iridium_ore",
+    "cubedsmechanisms:iridium_block",
+    "cubedsmechanisms:deepslate_iridium_ore",
+    "cubedsmechanisms:crystal_lamp",
+    "cubedsmechanisms:advanced_workbench"
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cubedsmechanisms:cryogenic_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "cubedsmechanisms:cryogenic_crystal"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cubedsmechanisms:electro_crystal"
+    }
+  },
+  "result": {
+    "item": "cubedsmechanisms:electro_block"
+  }
+}

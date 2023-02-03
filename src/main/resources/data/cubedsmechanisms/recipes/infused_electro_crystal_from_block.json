@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cubedsmechanisms:infused_electro_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "cubedsmechanisms:infused_electro_crystal"
+  }
+}

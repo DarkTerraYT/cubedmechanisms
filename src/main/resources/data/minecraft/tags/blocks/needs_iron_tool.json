@@ -1,11 +1,12 @@
 {
   "replace": false,
   "values": [
-    "simplemeckanisms:energonic_ore",
-    "simplemeckanisms:energonic_block",
-    "simplemeckanisms:deepslate_energonic_ore",
-    "simplemeckanisms:heated_ore",
-    "simplemeckanisms:super_heated_block",
-    "simplemeckanisms:deepslate_heated_ore"
+    "cubedsmechanisms:energonic_ore",
+    "cubedsmechanisms:energonic_block",
+    "cubedsmechanisms:deepslate_energonic_ore",
+    "cubedsmechanisms:heated_ore",
+    "cubedsmechanisms:super_heated_block",
+    "cubedsmechanisms:deepslate_heated_ore",
+    "cubedsmechanisms:purified_quartz_block"
   ]
 }

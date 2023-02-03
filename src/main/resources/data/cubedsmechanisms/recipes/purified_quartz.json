@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 3,
+  "group": "purified_quartz",
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": {
+    "item": "cubedsmechanisms:purified_quartz"
+  }
+}

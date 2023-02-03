@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "!#&",
+    "!#&",
+    "!#&"
+  ],
+  "key": {
+    "#": {
+      "item": "cubedsmechanisms:purified_quartz"
+    },
+    "$": {
+      "item": "cubedsmechanisms:iridium_crystal"
+    },
+    "!": {
+      "item": "minecraft:redstone_dust"
+    },
+    "result": {
+      "item": "cubedsmechanisms:crystal_lamp"
+    }
+  }
+}

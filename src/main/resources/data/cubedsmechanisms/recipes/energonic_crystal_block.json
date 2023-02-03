@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cubedsmechanisms:energonic_crystal"
+    }
+  },
+  "result": {
+    "item": "cubedsmechanisms:energonic_block"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:experience_bottle"
+    },
+    "$": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "cubedsmechanisms:deepslate_experience_ore"
+  }
+}
