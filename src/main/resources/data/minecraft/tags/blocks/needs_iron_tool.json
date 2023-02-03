@@ -7,6 +7,10 @@
     "cubedsmechanisms:heated_ore",
     "cubedsmechanisms:super_heated_block",
     "cubedsmechanisms:deepslate_heated_ore",
+    "cubedsmechanisms:nether_heated_ore",
+    "cubedsmechanisms:nether_energonic_ore",
+    "cubedsmechanisms:end_heated_ore",
+    "cubedsmechanisms:end_energonic_ore",
     "cubedsmechanisms:purified_quartz_block"
   ]
 }

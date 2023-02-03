@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "cubedsmechanisms:electro_ore",
+    "cubedsmechanisms:end_electro_ore",
+    "cubedsmechanisms:nether_electro_ore",
     "cubedsmechanisms:electro_block",
     "cubedsmechanisms:deepslate_electro_ore",
     "cubedsmechanisms:infused_electro_block"

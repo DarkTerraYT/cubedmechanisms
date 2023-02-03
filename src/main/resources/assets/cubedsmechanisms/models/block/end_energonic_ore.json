@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cubedsmechanisms:block/end_energonic_ore"
+  }
+}

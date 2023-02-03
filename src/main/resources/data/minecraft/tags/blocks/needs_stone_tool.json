@@ -7,7 +7,13 @@
     "cubedsmechanisms:iridium_ore",
     "cubedsmechanisms:iridium_block",
     "cubedsmechanisms:deepslate_iridium_ore",
+    "cubedsmechanisms:end_cryogenic_ore",
+    "cubedsmechanisms:nether_cryogenic_ore",
     "cubedsmechanisms:crystal_lamp",
+    "cubedsmechanisms:end_iridium_ore",
+    "cubedsmechanisms:nether_iridium_ore",
+    "cubedmechanisms:experience_ore",
+    "cubedmechanisms:deepslate_experience_ore",
     "cubedsmechanisms:advanced_workbench"
   ]
 }

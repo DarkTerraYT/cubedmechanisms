@@ -22,7 +22,7 @@ public class creativeTab {
             return new ItemStack(blockinit.EXPERIENCE_ORE.get());
         }
     };
-    public static final CreativeModeTab TAB_SIMPLE_MECKANISMS_BLOCKS = new CreativeModeTab("simple_meckanisms_blocks_tab") {
+    public static final CreativeModeTab TAB_SIMPLE_MACHINES_BLOCKS = new CreativeModeTab("simple_machines_blocks_tab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(blockinit.PLACE_HOLDER_BLOCK.get());
