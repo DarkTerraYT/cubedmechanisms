@@ -36,7 +36,7 @@ public class CrystalExtractorMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0,  34, 12  ));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0,  134, 13  ));
             this.addSlot(new SlotItemHandler(iItemHandler, 1,  80, 12  ));
             this.addSlot(new SlotItemHandler(iItemHandler, 2, 80 , 65  ));
         } );
