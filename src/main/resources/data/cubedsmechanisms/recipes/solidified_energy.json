@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": [
+        "cubedsmechanisms:infused_electro_crystal",
+        "cubedsmechanisms:electro_crystal",
+        "cubedsmechanisms:energonic_crystal",
+        "cubedsmechanisms:super_heated_crystal",
+        "cubedsmechanisms:iridium_crystal",
+        "cubedsmechanisms:cryogenic_crystal"
+      ]
+    },
+    "$": {
+      "item": "cubedsmechanisms:liquid_energy_bucket"
+    }
+  },
+  "result": {
+    "item": "cubedsmechanisms:solidified_energy"
+  }
+}

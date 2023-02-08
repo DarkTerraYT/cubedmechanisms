@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "cubedsmechanisms:infused_electro_crystal",
+    "cubedsmechanisms:electro_crystal",
+    "cubedsmechanisms:energonic_crystal",
+    "cubedsmechanisms:super_heated_crystal",
+    "cubedsmechanisms:iridium_crystal",
+    "cubedsmechanisms:cryogenic_crystal"
+  ]
+}

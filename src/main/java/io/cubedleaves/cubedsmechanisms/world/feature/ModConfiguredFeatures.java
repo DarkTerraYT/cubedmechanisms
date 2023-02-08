@@ -60,18 +60,20 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), blockinit.END_IRIDIUM_ORE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> END_HEATED_ORES = Suppliers.memoize(() -> List.of(
         OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), blockinit.END_HEATED_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> END_CRYOGENIC_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), blockinit.END_CRYOGENIC_ORE.get().defaultBlockState())));
 
     public static final RegistryObject<ConfiguredFeature<?,?>> ELECTRO_ORE = CONFIGURED_FEATURE.register("electro_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ELECTRO_ORES.get(),5)));
     public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_ELECTRO_ORE = CONFIGURED_FEATURE.register("nether_electro_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ELECTRO_ORES.get(),7)));
     public static final RegistryObject<ConfiguredFeature<?,?>> END_ELECTRO_ORE = CONFIGURED_FEATURE.register("end_electro_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_ELECTRO_ORES.get(),7)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> ENERGONIC_ORE = CONFIGURED_FEATURE.register("energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ELECTRO_ORES.get(),5)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_ENERGONIC_ORE = CONFIGURED_FEATURE.register("nether_energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ELECTRO_ORES.get(),7)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> END_ENERGONIC_ORE = CONFIGURED_FEATURE.register("end_energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_ELECTRO_ORES.get(),7)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> CRYOGENIC_ORE = CONFIGURED_FEATURE.register("cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ELECTRO_ORES.get(),5)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_CRYOGENIC_ORE = CONFIGURED_FEATURE.register("nether_cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ELECTRO_ORES.get(),7)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> END_CRYOGENIC_ORE = CONFIGURED_FEATURE.register("end_cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_ELECTRO_ORES.get(),7)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> ENERGONIC_ORE = CONFIGURED_FEATURE.register("energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ENERGONIC_ORES.get(),5)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_ENERGONIC_ORE = CONFIGURED_FEATURE.register("nether_energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ENERGONIC_ORES.get(),7)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> END_ENERGONIC_ORE = CONFIGURED_FEATURE.register("end_energonic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_ENERGONIC_ORES.get(),7)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> CRYOGENIC_ORE = CONFIGURED_FEATURE.register("cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_CRYOGENIC_ORES.get(),5)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_CRYOGENIC_ORE = CONFIGURED_FEATURE.register("nether_cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_CRYOGENIC_ORES.get(),7)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> END_CRYOGENIC_ORE = CONFIGURED_FEATURE.register("end_cryogenic_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_CRYOGENIC_ORES.get(),7)));
     public static final RegistryObject<ConfiguredFeature<?,?>> IRIDIUM_ORE = CONFIGURED_FEATURE.register("iridium_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_IRIDIUM_ORES.get(),5)));
-    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_IRIDIUM_ORE = CONFIGURED_FEATURE.register("nether_iridium,_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_IRIDIUM_ORES.get(),7)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_IRIDIUM_ORE = CONFIGURED_FEATURE.register("nether_iridium_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_IRIDIUM_ORES.get(),7)));
     public static final RegistryObject<ConfiguredFeature<?,?>> END_IRIDIUM_ORE = CONFIGURED_FEATURE.register("end_iridium_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_IRIDIUM_ORES.get(),7)));
     public static final RegistryObject<ConfiguredFeature<?,?>> HEATED_ORE = CONFIGURED_FEATURE.register("heated_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_HEATED_ORES.get(),5)));
     public static final RegistryObject<ConfiguredFeature<?,?>> NETHER_HEATED_ORE = CONFIGURED_FEATURE.register("nether_heated_ore", () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_HEATED_ORES.get(),7)));

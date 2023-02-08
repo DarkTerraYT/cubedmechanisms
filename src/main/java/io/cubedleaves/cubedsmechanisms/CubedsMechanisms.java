@@ -1,8 +1,17 @@
 package io.cubedleaves.cubedsmechanisms;
 
 import com.mojang.logging.LogUtils;
+import io.cubedleaves.cubedsmechanisms.Init.entity.BlockEntities;
+import io.cubedleaves.cubedsmechanisms.fluid.BaseFluidType;
+import io.cubedleaves.cubedsmechanisms.fluid.FluidTypes;
+import io.cubedleaves.cubedsmechanisms.fluid.Fluids;
+import io.cubedleaves.cubedsmechanisms.screen.CrystalExtractorScreen;
+import io.cubedleaves.cubedsmechanisms.screen.MenuTypes;
 import io.cubedleaves.cubedsmechanisms.world.feature.ModConfiguredFeatures;
 import io.cubedleaves.cubedsmechanisms.world.feature.ModPlacedFeatures;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,11 +39,17 @@ public class CubedsMechanisms
         iteminit.register(modEventBus);
         blockinit.register(modEventBus);
 
+
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+
+        Fluids.register(modEventBus);
+        FluidTypes.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        BlockEntities.register(modEventBus);
+        MenuTypes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -54,7 +69,10 @@ public class CubedsMechanisms
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            ItemBlockRenderTypes.setRenderLayer(Fluids.LIQUID_ENERGY_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(Fluids.FLOWING_LIQUID_ENERGY.get(), RenderType.translucent());
 
+            MenuScreens.register(MenuTypes.CRYSTAL_EXTRACTOR_MENU.get(), CrystalExtractorScreen::new);
         }
     }
 }

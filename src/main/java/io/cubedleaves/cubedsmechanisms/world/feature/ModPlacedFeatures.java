@@ -74,7 +74,7 @@ public class ModPlacedFeatures {
                     commonOrePlacement(7, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(77)))));
     public static final RegistryObject<PlacedFeature> HEATED_ORE_PLACED = PLACED_FEATURES.register("heated_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.ELECTRO_ORE.getHolder().get(),
+            () -> new PlacedFeature(ModConfiguredFeatures.HEATED_ORE.getHolder().get(),
                     commonOrePlacement(7, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(55)))));
 

@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": {"model": "simplemechanisms:block/end_cryogenic_ore"}
+    "": {"model": "cubedsmechanisms:block/end_cryogenic_ore"}
   }
 }

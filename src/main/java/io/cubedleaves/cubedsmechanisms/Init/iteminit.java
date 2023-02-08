@@ -2,7 +2,10 @@ package io.cubedleaves.cubedsmechanisms.Init;
 
 import io.cubedleaves.cubedsmechanisms.Init.custom.item.InfinityCrystal;
 import io.cubedleaves.cubedsmechanisms.CubedsMechanisms;
+import io.cubedleaves.cubedsmechanisms.fluid.Fluids;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,7 +30,9 @@ public class iteminit {
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_RESOURCES)));
     public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust", () -> new Item(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_RESOURCES)));
     public static final RegistryObject<Item> INFINITY_CRYSTAL = ITEMS.register("infinity_crystal", () -> new InfinityCrystal(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_UNOBTAINABLE).rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> PLACE_HOLDER_ITEM = ITEMS.register("place_holder", () -> new Item(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_UNOBTAINABLE).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> PLACE_HOLDER_ITEM = ITEMS.register("place_holder", () -> new Item(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_UNOBTAINABLE)));
+    public static final RegistryObject<Item> LIQUID_ENERGY_BUCKET = ITEMS.register("liquid_energy_bucket", () -> new BucketItem(Fluids.LIQUID_ENERGY_SOURCE, new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_RESOURCES).craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final RegistryObject<Item> SOLIDIFIED_ENERGY = ITEMS.register("solidified_energy", () -> new Item(new Item.Properties().tab(creativeTab.TAB_SIMPLE_MACHINES_RESOURCES)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

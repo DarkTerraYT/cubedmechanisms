@@ -1,14 +1,19 @@
 package io.cubedleaves.cubedsmechanisms.Init;
 
 import io.cubedleaves.cubedsmechanisms.Init.custom.block.AdvencedWorkbench;
+import io.cubedleaves.cubedsmechanisms.Init.custom.block.CrystalExtractor;
+import io.cubedleaves.cubedsmechanisms.Init.custom.block.CrystalGenerator;
 import io.cubedleaves.cubedsmechanisms.Init.custom.block.CrystalLamp;
 import io.cubedleaves.cubedsmechanisms.CubedsMechanisms;
+import io.cubedleaves.cubedsmechanisms.fluid.Fluids;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -65,8 +70,11 @@ public class blockinit {
     public static final RegistryObject<Block> END_ENERGONIC_ORE = registerBlock("end_energonic_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2,10)), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
     public static final RegistryObject<Block> END_ELECTRO_ORE = registerBlock("end_electro_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(5,13)), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
     public static final RegistryObject<Block> END_HEATED_ORE = registerBlock("end_heated_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2,10)), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
-    public static final RegistryObject<Block> CRYSTAL_LAMP = registerBlock("crystal_lamp", () -> new CrystalLamp(BlockBehaviour.Properties.of(Material.STONE).strength(4f).lightLevel(state -> state.getValue(CrystalLamp.LIT) ? 15: 0).requiresCorrectToolForDrops()), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
-    public static final RegistryObject<Block> ADVANCED_WORKBENCH = registerBlock("advanced_workbench", () -> new AdvencedWorkbench(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
+    public static final RegistryObject<LiquidBlock> LIQUID_ENERGY_BLOCK = BLOCKS.register("liquid_energy_block", () -> new LiquidBlock(Fluids.LIQUID_ENERGY_SOURCE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+    public static final RegistryObject<Block> CRYSTAL_LAMP = registerBlock("crystal_lamp", () -> new CrystalLamp(BlockBehaviour.Properties.of(Material.STONE).strength(4f).lightLevel(state -> state.getValue(CrystalLamp.LIT) ? 18: 0).requiresCorrectToolForDrops()), creativeTab.TAB_SIMPLE_MACHINES_RESOURCES);
+    public static final RegistryObject<Block> ADVANCED_WORKBENCH = registerBlock("advanced_workbench", () -> new AdvencedWorkbench(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()), creativeTab.TAB_SIMPLE_MACHINES_MISC);
+    public static final RegistryObject<Block> CRYSTAL_GENERATOR = registerBlock("crystal_generator", () -> new CrystalGenerator(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()), creativeTab.TAB_SIMPLE_MACHINES_BLOCKS);
+    public static final RegistryObject<Block> CRYSTAL_EXTRACTOR = registerBlock("crystal_extractor", () -> new CrystalExtractor(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()), creativeTab.TAB_SIMPLE_MACHINES_BLOCKS);
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

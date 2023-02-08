@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": {"model": "simplemechanisms:block/nether_cryogenic_ore"}
+    "": {"model": "cubedsmechanisms:block/nether_cryogenic_ore"}
   }
 }

@@ -25,7 +25,7 @@ public class creativeTab {
     public static final CreativeModeTab TAB_SIMPLE_MACHINES_BLOCKS = new CreativeModeTab("simple_machines_blocks_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(blockinit.PLACE_HOLDER_BLOCK.get());
+            return new ItemStack(blockinit.CRYSTAL_GENERATOR.get());
         }
     };
 
